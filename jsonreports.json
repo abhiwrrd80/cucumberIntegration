@@ -3,115 +3,105 @@
     "line": 1,
     "elements": [
       {
-        "line": 15,
-        "name": "Search for Laptop",
+        "line": 6,
+        "name": "Test login with valid credentials",
         "description": "",
-        "id": "test-search-fumctionality;search-for-laptop;;2",
+        "id": "test-login-functionality;test-login-with-valid-credentials",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 46467223685,
+              "duration": 18625873303,
               "status": "passed"
             },
-            "line": 4,
-            "name": "user logsin the app",
+            "line": 7,
+            "name": "user opens testmeapp",
             "match": {
-              "location": "Exercise2.user_logsin_the_app()"
+              "location": "Exercise1.user_opens_testmeapp()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1286998547,
+              "duration": 184176454,
               "status": "passed"
             },
-            "line": 5,
-            "name": "user searches for \"laptop\"",
+            "line": 8,
+            "name": "user enters username as \"lalitha\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"laptop\"",
-                  "offset": 18
+                  "val": "\"lalitha\"",
+                  "offset": 24
                 }
               ],
-              "location": "Exercise2.user_searches_for(String)"
+              "location": "Exercise1.user_enters_username_as(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 5059551711,
+              "duration": 146439903,
               "status": "passed"
             },
-            "line": 6,
-            "name": "user logs out",
-            "match": {
-              "location": "Exercise2.user_logs_out()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 16,
-        "name": "Search for Laptop",
-        "description": "",
-        "id": "test-search-fumctionality;search-for-laptop;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 33320654820,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "user logsin the app",
-            "match": {
-              "location": "Exercise2.user_logsin_the_app()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1088629824,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user searches for \"Travelkit\"",
+            "line": 9,
+            "name": "user enters password as \"password123\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Travelkit\"",
-                  "offset": 18
+                  "val": "\"password123\"",
+                  "offset": 24
                 }
               ],
-              "location": "Exercise2.user_searches_for(String)"
+              "location": "Exercise1.user_enters_password_as(String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1451627587,
+              "duration": 592553871,
               "status": "passed"
             },
-            "line": 6,
-            "name": "user logs out",
+            "line": 10,
+            "name": "user clicks login button",
             "match": {
-              "location": "Exercise2.user_logs_out()"
+              "location": "Exercise1.user_clicks_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 36251,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "verify login success",
+            "match": {
+              "location": "Exercise1.verify_login_success()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 228705662,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "close testmeapp",
+            "match": {
+              "location": "Exercise1.close_testmeapp()"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Test search fumctionality",
-    "description": "",
-    "id": "test-search-fumctionality",
+    "name": "Test login functionality",
+    "description": "Description: Registered user can use login credentials to get logged in to the testmeapp\nusername - lalitha\npassword - password123",
+    "id": "test-login-functionality",
     "keyword": "Feature",
-    "uri": "Features/exercise2.feature",
+    "uri": "Features/exercise1.feature",
     "tags": []
   }
 ]
